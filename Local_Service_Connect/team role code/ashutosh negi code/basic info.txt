@@ -1,0 +1,29 @@
+## Module 4: Ashutosh Negi (Requests + Completion, Overall Project Leader)
+
+**What he built**
+- Provider circular queues (max 5 each): waiting queue, main queue and accepted-booking view queue, each with enqueue, dequeue, display and a temp queue for removing a booking from the middle while keeping order.
+- `process_booking()`: provider handles the first waiting request (Accept, Reject, or Keep waiting).
+- `complete_booking()`: marks an accepted booking as completed and increases the provider's work count.
+- `provider_request_menu()`: the provider's request-handling menu.
+- Provider's recent-completed stack (max 5).
+- User cancelled/rejected stack and completed stack (push, pop, temp stack, removal), with the display functions.
+- `cancel_booking()`: cancels a WAITING or ACCEPTED booking and keeps the remaining order.
+- `rate_booking()`: rating from 1 to 5, updates the provider's average, and removes the rated booking so it cannot be rated twice.
+- `data_structure_value`: the shared pointer that carries the removed booking out of pop and dequeue.
+
+**Builds on / connects to**
+- Works on the `Booking` objects created in Module 3 and the user active stack from Module 3.
+- Uses the `User` and `Provider` classes from Modules 1 and 2, and `current_access_provider` from Module 2.
+- Module 2's profile shows the rating and work count that he updates.
+
+---
+
+## How the modules connect
+
+1. **Module 1** and **Module 2**: users and providers sign up and sign in.
+2. **Module 3**: a user searches, sorts, picks a provider and a Booking is created (status WAITING).
+3. **Module 4**: the provider accepts, rejects or keeps it waiting; later marks it completed; the user can cancel or rate it.
+4. The completed work and the rating then show up in the provider profile (Module 2) and in the next search (Module 3).
+
+Note: the four files are split for reporting and do not compile separately. The original single `.cpp` is the one that runs.
+

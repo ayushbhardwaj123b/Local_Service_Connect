@@ -1,0 +1,19 @@
+## Module 3: Devyansh Bhardwaj (Search + User Booking, plus overall coordination)
+
+**What he built**
+- `Booking` class: one booking object (number starting from 1000, user and provider references, service, area, status). The same object is shared by all stacks and queues through its pointer.
+- `create_booking()`:
+  - Pass 1 counts matching providers (service + area, waiting queue not full).
+  - Pass 2 allocates an exact-size `Provider*` array with `new` and fills it.
+  - Bubble sort by current order, highest average rating, or most completed work.
+  - The user picks a provider and the Booking is created, then pushed to the user's active stack and enqueued in the provider's waiting queue.
+  - The array is freed with `delete[]`.
+- User active-booking stack (max 5): push, pop, temp stack, and removal of one booking from the middle.
+- `display_user_booking_stack()` and `user_booking_menu()` (create, cancel, view active, cancelled and completed bookings, rate).
+- Overall coordination: shared headers, the `max` size macro, forward declarations, and `main()` (the main menu that joins all modules).
+
+**Builds on / connects to**
+- Reads the provider linked list from Module 2 and uses `current_access_user` from Module 1.
+- Calls Module 4's queue function to place the booking in the provider's waiting queue.
+- Menu options for cancel, rate and history call Module 4's functions.
+- `main()` calls the sign-up, sign-in and dashboard functions of Modules 1 and 2.

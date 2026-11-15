@@ -1,0 +1,16 @@
+## Module 2: Rakshita Pant (Provider + Profile)
+
+**What she built**
+- `Provider` class: profile fields plus service, area, rating total, rating count, work count, and the provider's own queues and stack.
+- Provider linked list: new providers are added at the end (`insert_provider_at_end`).
+- `sign_up_provider()`: collects details, then service and area from menus; the provider ID starts from 100.
+- `sign_in_provider()` and `forgot_provider_password()`: same login and recovery flow as the user side.
+- `display_provider_info()` (shows average rating and completed work) and `change_provider_info()` (adds the service change option).
+- `provider_dashboard()`: the menu shown after provider login.
+
+**Builds on / connects to**
+- Her provider linked list is the list that Module 3's search goes through.
+- The rating and work count she displays are updated by Module 4 (rating and completion).
+- Her dashboard opens `provider_request_menu()` from Module 4.
+
+---

@@ -1,0 +1,16 @@
+# Local Service Booking System: Team Contribution
+
+A terminal-based C++ simulation where users find local service providers (plumber, electrician, etc.) by service and area, book them, and rate them after the job. Every menu option runs a real data-structure operation behind it (linked lists, stacks, circular queues, sorting, dynamic memory).
+
+The project code was written as one `.cpp` file. For this report it has been split into four files, one per member. Code is copied as-is, with no logic changes. Each block in a file is labelled with its original line numbers.
+
+| Member | Module | File | Code lines |
+|---|---|---|---|
+| Divyansh Barsiwal | 1: User + Authentication | `module1_divyansh_barsiwal_user_auth.cpp` | 288 (17%) |
+| Rakshita Pant | 2: Provider + Profile | `module2_rakshita_pant_provider_profile.cpp` | 361 (22%) |
+| Devyansh Bhardwaj | 3: Search + User Booking, plus overall coordination | `module3_devyansh_bhardwaj_search_booking.cpp` | 319 (19%) |
+| Ashutosh Negi | 4: Requests + Completion (Overall Project Leader) | `module4_ashutosh_negi_requests_completion.cpp` | 706 (42%) |
+
+Total: 1674 lines of code, all assigned, none counted twice.
+
+---

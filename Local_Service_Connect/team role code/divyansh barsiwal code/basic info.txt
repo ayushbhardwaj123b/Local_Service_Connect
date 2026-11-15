@@ -1,0 +1,16 @@
+## Module 1: Divyansh Barsiwal (User + Authentication)
+
+**What he built**
+- `User` class: profile fields (ID, name, phone, email, password, area, security answers) and the user's own booking stacks.
+- User linked list: new users are added at the end (`insert_user_at_end`).
+- `sign_up_user()`: collects details, creates the User object, assigns the ID (starts from 1).
+- `sign_in_user()`: finds the user by ID, phone or email in the linked list, then checks the password.
+- `forgot_user_password()`: resets the password using the two security answers.
+- `display_user_info()` and `change_user_info()`: view and edit profile (with previous-value verification for email, password and security answers).
+- `user_dashboard()`: the menu shown after login.
+
+**Builds on / connects to**
+- His dashboard opens `user_booking_menu()` from Module 3.
+- `current_access_user` (set at sign-in) is the pointer that Modules 3 and 4 use to know who is logged in.
+
+---
